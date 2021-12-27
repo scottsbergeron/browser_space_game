@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Scott Bergeron">
+
+        <title>Space Game</title>
+    </head>
+    <style>
+        #game {
+            width: 100%;
+            height: 100%;
+        }
+
+        .game-wrapper {
+            background: white;
+            border: 1px dashed;
+            box-sizing: border-box;
+            height: calc(100vh - 16px);
+            max-width: 100%;
+            overflow: auto;
+            padding: 10px;
+            resize: horizontal;
+        }
+
+        div {
+            background: gold;
+            padding-bottom: 56.25%;
+            width: 100%;
+        }
+    </style>
+    <body>
+        <div class="game-wrapper">
+            <div>
+                <canvas id="game"></canvas>
+            </div>
+        </div>
+    </body>
+</html>
