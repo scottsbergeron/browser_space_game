@@ -1,40 +1,18 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Scott Bergeron">
 
-        <title>Space Game</title>
-    </head>
-    <style>
-        #game {
-            width: 100%;
-            height: 100%;
-        }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Scott Bergeron">
 
-        .game-wrapper {
-            background: white;
-            border: 1px dashed;
-            box-sizing: border-box;
-            height: calc(100vh - 16px);
-            max-width: 100%;
-            overflow: auto;
-            padding: 10px;
-            resize: horizontal;
-        }
+  <title>Space Game</title>
+</head>
+<script data-main="main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        div {
-            background: gold;
-            padding-bottom: 56.25%;
-            width: 100%;
-        }
-    </style>
-    <body>
-        <div class="game-wrapper">
-            <div>
-                <canvas id="game"></canvas>
-            </div>
-        </div>
-    </body>
+<body>
+  <h1>Space Game</h1>
+  <div id="game-container"></div>
+</body>
+
 </html>
