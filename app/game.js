@@ -1,19 +1,14 @@
 define(function (require) {
-  var platformScene = require('app/scenes/platform');
+  // var platformScene = require('app/scenes/platform');
+  var skyMapScene = require('app/scenes/sky_map');
 
   var config = {
     type: Phaser.AUTO,
-    parent: "game-container",
-    width: 800,
-    height: 600,
-    physics: {
-      default: 'arcade',
-      arcade: {
-        gravity: { y: 300 },
-        debug: false
-      }
-    },
-    scene: new platformScene()
+    parent: 'game-container',
+    width: 1200,
+    height: 800,
+    backgroundColor: '#2d2d2d',
+    scene: new skyMapScene()
   };
 
   new Phaser.Game(config);
