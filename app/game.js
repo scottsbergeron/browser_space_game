@@ -1,6 +1,6 @@
 define(function (require) {
-  // var platformScene = require('app/scenes/platform');
-  var skyMapScene = require('app/scenes/sky_map');
+  // var platformScene = require('scenes/platform');
+  var skyMapScene = require('scenes/sky_map');
 
   var config = {
     type: Phaser.AUTO,
