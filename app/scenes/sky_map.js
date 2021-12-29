@@ -17,7 +17,7 @@ define(function (require) {
     }
 
     create() {
-      const mapGenerator = new MapGenerator([1, 2, 3, 4]);
+      const mapGenerator = new MapGenerator([1, 2, 3, 4, 5]);
       const ground = mapGenerator.generate();
 
       const tilemapUnderside = this.make.tilemap({ data: ground, tileWidth: TILE_SIZE, tileHeight: TILE_SIZE });
@@ -31,7 +31,6 @@ define(function (require) {
 
       var cursors = this.input.keyboard.createCursorKeys();
 
-      this.cameras.main.setZoom(1);
       this.cameras.main.centerOn(ground[0].length * TILE_SIZE / 2, ground.length * TILE_SIZE / 2);
 
       var controlConfig = {
